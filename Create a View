@@ -1,0 +1,11 @@
+In your app's views.py file, create a view function (task_view) that will render the HTML page
+
+# appname/views.py
+from django.shortcuts import render
+
+def task_view(request):
+    # You can pass dynamic data here if needed
+    context = {
+        'dynamic_data': 'This is dynamic data from Django!',
+    }
+    return render(request, 'task.html', context)
