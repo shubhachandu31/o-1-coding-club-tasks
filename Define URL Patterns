@@ -1,0 +1,9 @@
+In your app's urls.py file, define a URL pattern for the desired URL (localhost:8000/url/task) and link it to a view function:
+
+# appname/urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('url/task/', views.task_view, name='task_view'),
+]
