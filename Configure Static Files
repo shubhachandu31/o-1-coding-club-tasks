@@ -1,0 +1,11 @@
+Ensure that your project's settings.py has the necessary settings for serving static files. Add the following lines to your settings. 
+
+# projectname/settings.py
+import os
+
+# ...
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# ...
